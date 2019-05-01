@@ -1,10 +1,10 @@
-[！[]（https://jitpack.io/v/DiseR-LawnX/AdvancedSnackBar.svg）（https://jitpack.io/#DiseR-LawnX/AdvancedSnackBar）
+[![]（https://jitpack.io/v/DiseR-LawnX/AdvancedSnackBar.svg）（https://jitpack.io/#DiseR-LawnX/AdvancedSnackBar）
 # AdvancedSnackBar
-<br>
+
 ### Introduction:
 The advanced addon on SnackBar
 Use Google's latest Material Design 2.0 style.
-<br>
+
 ### Useage:
 1.Compile it on your project:
 (Project)build.gradle:
