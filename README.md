@@ -20,7 +20,7 @@ allprojects {
 (app)build.gradle:
 ```
 dependencies {
-	        implementation 'com.github.DiseR-LawnX:AdvancedSnackBar:Tag'
+	        implementation 'com.github.DiseR-LawnX:AdvancedSnackBar:0.1.0'
 	}
 ```
 
