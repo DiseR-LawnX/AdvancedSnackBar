@@ -1,4 +1,4 @@
-[![]（https://jitpack.io/v/DiseR-LawnX/AdvancedSnackBar.svg）（https://jitpack.io/#DiseR-LawnX/AdvancedSnackBar）
+[![](https://jitpack.io/v/DiseR-LawnX/AdvancedSnackBar.svg)(https://jitpack.io/#DiseR-LawnX/AdvancedSnackBar)
 # AdvancedSnackBar
 
 ### Introduction:
@@ -53,4 +53,5 @@ FloatingActionButton fab = findViewById(R.id.fab);
 
 ### Preview:
 ![preview](https://raw.githubusercontent.com/DiseR-LawnX/AdvancedSnackBar/master/image/screenshot_01.png)
-#Thanks for your use enjoy it!#
+
+Thanks for your use enjoy it!
