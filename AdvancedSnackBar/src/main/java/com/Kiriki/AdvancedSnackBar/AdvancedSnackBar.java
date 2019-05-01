@@ -7,13 +7,16 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.core.view.ViewCompat;
 
 import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.snackbar.SnackbarContentLayout;
 
 public class AdvancedSnackBar{
     private static Snackbar snackbar;
@@ -29,21 +32,21 @@ public class AdvancedSnackBar{
     /*public AdvancedSnackBar(){
     }*/
     @NonNull
-    public static void make(View container,int duration){
-        snackbar = Snackbar.make(container,null,duration);
-        main_context = ContextApplication.getContext();
+    public static void make(View container,int duration,Context context){
+        snackbar = Snackbar.make(container,"",duration);
+        main_context = context;
     }
     @NonNull
     public static void setDesign(int design){
         switch (design){
             case 0:
-                FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) snackbar.getView().getLayoutParams();
+                ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) snackbar.getView().getLayoutParams();
                 params.setMargins(0,0,0,0);
                 snackbar.getView().setLayoutParams(params);
                 snackbar.getView().setBackground(main_context.getDrawable(R.drawable.design_snackbar_original_background));
                 break;
             case 1:
-                FrameLayout.LayoutParams params1 = (FrameLayout.LayoutParams) snackbar.getView().getLayoutParams();
+                ViewGroup.MarginLayoutParams params1 = (ViewGroup.MarginLayoutParams) snackbar.getView().getLayoutParams();
                 params1.setMargins(12,12,12,12);
                 snackbar.getView().setLayoutParams(params1);
                 snackbar.getView().setBackground(main_context.getDrawable(R.drawable.design_snackbar_material_background));
@@ -78,7 +81,7 @@ public class AdvancedSnackBar{
     }
     @NonNull
     public static void setMargin(int top,int bottom,int left ,int right){
-        FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) snackbar.getView().getLayoutParams();
+        ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) snackbar.getView().getLayoutParams();
         params.setMargins(left,top,right,bottom);
         snackbar.getView().setLayoutParams(params);
     }

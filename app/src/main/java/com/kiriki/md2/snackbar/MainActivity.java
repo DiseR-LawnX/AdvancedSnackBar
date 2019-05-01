@@ -11,6 +11,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
 import android.view.View;
 import android.view.Menu;
@@ -24,26 +25,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        final CoordinatorLayout contaier = findViewById(R.id.container);
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 AdvancedSnackBar snackbar = new AdvancedSnackBar();
-                snackbar.make(view,AdvancedSnackBar.LENGTH_LONG);
+                snackbar.make(contaier,AdvancedSnackBar.LENGTH_LONG,MainActivity.this);
                 snackbar.setDesign(AdvancedSnackBar.DESIGN_MATERIAL);
-                snackbar.setText("66666");
-                snackbar.setBackgroundColor("#000000");
-                snackbar.setTextSize(18);
-                snackbar.setElevation(4.0f);
-                snackbar.addButton("Button", new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        //Any Code
-                    }
-                });
-                snackbar.setBackgroundDrawable(R.drawable.design_snackbar_material_background);
-                snackbar.setMargin(12,12,12,12);
+                snackbar.setText("This is a Snackbar");
                 snackbar.show();
             }
         });
