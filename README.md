@@ -34,6 +34,8 @@ FloatingActionButton fab = findViewById(R.id.fab);
                 AdvancedSnackBar snackbar = new AdvancedSnackBar();
                 snackbar.make(contaier,AdvancedSnackBar.LENGTH_LONG,MainActivity.this);
                 snackbar.setDesign(AdvancedSnackBar.DESIGN_MATERIAL);
+				/*DESIGN_MATERIAL:Material Design 2.0 Style
+				DESIGN_ORINIGAL: Orinigal Style*/
                 snackbar.setText("This is a Snackbar");
                 snackbar.setBackgroundColor("#000000");
                 snackbar.setTextSize(18);
