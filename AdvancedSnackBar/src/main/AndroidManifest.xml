@@ -1,5 +1,3 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.Kiriki.AdvancedSnackBar" >
-    <application
-        android:name="com.Kiriki.AdvancedSnackBar.ContextApplication"></application>
 </manifest>
