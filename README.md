@@ -7,6 +7,7 @@ Use Google's latest Material Design 2.0 style.
 
 ### Useage:
 1.Compile it on your project:
+
 (Project)build.gradle:
 ```
 allprojects {
