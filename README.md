@@ -1,4 +1,4 @@
-[![](https://jitpack.io/v/DiseR-LawnX/AdvancedSnackBar.svg)(https://jitpack.io/#DiseR-LawnX/AdvancedSnackBar)
+![](https://jitpack.io/v/DiseR-LawnX/AdvancedSnackBar.svg)
 # AdvancedSnackBar
 
 ### Introduction:
