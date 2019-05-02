@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:id="@+id/container"
-    android:layout_marginBottom="12px">
+    android:id="@+id/container">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
