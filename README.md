@@ -31,11 +31,10 @@ FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AdvancedSnackBar snackbar = new AdvancedSnackBar();
-                snackbar.make(contaier,AdvancedSnackBar.LENGTH_LONG,MainActivity.this);
+                AdvancedSnackBar snackbar = new AdvancedSnackBar(contaier,AdvancedSnackBar.LENGTH_LONG,MainActivity.this);
                 snackbar.setDesign(AdvancedSnackBar.DESIGN_MATERIAL);
 				/*DESIGN_MATERIAL:Material Design 2.0 Style
-				DESIGN_ORINIGAL: Orinigal Style*/
+				DESIGN_ORIGINAL: Original Style*/
                 snackbar.setText("This is a Snackbar");
                 snackbar.setBackgroundColor("#000000");
                 snackbar.setTextSize(18);
