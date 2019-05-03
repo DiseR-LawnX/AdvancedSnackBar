@@ -27,22 +27,11 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AdvancedSnackBar snackbar = new AdvancedSnackBar(contaier,AdvancedSnackBar.LENGTH_LONG,MainActivity.this);
+                AdvancedSnackBar snackbar = new AdvancedSnackBar(view,AdvancedSnackBar.LENGTH_LONG,MainActivity.this);
                 snackbar.setDesign(AdvancedSnackBar.DESIGN_MATERIAL);
 				/*DESIGN_MATERIAL:Material Design 2.0 Style
 				DESIGN_ORIGINAL: Original Style*/
                 snackbar.setText("This is a Snackbar");
-                snackbar.setBackgroundColor("#000000");
-                snackbar.setTextSize(18);
-                snackbar.setElevation(4.0f);
-                snackbar.addButton("Button", new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        //Any Code
-                    }
-                });
-                snackbar.setBackgroundDrawable(R.drawable.design_snackbar_material_background);
-                snackbar.setMargin(12,12,12,12);
                 snackbar.show();
             }
         });
